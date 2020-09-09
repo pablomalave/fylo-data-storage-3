@@ -1,0 +1,164 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: hsl(229,57%,11%); /*Very Dark Blue*/
+    background-image: url(../images/bg-mobile.svg);
+    color: #ffffff; /*White*/
+    margin: 0;
+    /* myGrid */
+    display: grid;
+    grid-template-columns: repeat(12, 8.33%);
+    grid-template-rows: repeat(3, auto);
+}
+
+/* Main Container*/
+.main{
+    grid-column: 2 / 12;
+    background-color: hsl(228, 56%, 26%); /*Dark Blue*/
+    padding: 10%;
+    border-radius: 10px 50% 10px 10px;
+    margin: 45% 0 1%;
+}
+
+.buttonDeck{
+    display: flex;
+    margin-top: 10%;
+}
+
+.button{
+    background-color: hsl(229,57%,11%);
+    border: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    margin-right: 10px;
+}
+
+/* Memory Container */
+.memoryContainer{
+    grid-column: 2 / 12;
+    grid-row: 2 / 3;
+    background-color: hsl(228, 56%, 26%); /*Dark Blue*/
+    padding: 10% 10% 15%;
+    margin: 5% 0;
+    border-radius: 10px;
+    text-align: center;
+    position: relative; 
+}
+
+.memoryContainer strong{
+    font-weight: 700;
+}
+
+.memoryLimits{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: 700;
+    font-size: 0.8em;
+}
+
+/* Memory Left Container */
+.memoryLeft{
+    position: absolute;
+    bottom: -25%;
+    left: 28%;
+    background-color: #ffffff; /*White*/
+    color: hsl(229, 7%, 55%);
+    padding: 5%;
+    border-radius: 10px;
+    font-size: 0.8em;
+}
+
+.memoryLeft strong{
+    font-size: 2.8em;
+    font-weight: 700;
+    color: #000000; /*Balck*/
+}
+
+/*------------- INPUT RANGE "slider"------------*/
+/*----- Tomado de un generador de estilos----*/
+input[type=range]{
+    -webkit-appearance: none;
+    margin: 10px auto 10px 5%;
+    width: 100%;
+    background-color: #1e2c69;
+}
+
+input[type=range]:focus{
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track{
+    width: 100%;
+    height: 12.8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    background: #0C0E1C;
+    border-radius: 25px;
+    border: 0px #fffffd solid;
+}
+
+input[type=range]::-webkit-slider-thumb{
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    border: 0px #fc4d90 solid;
+    height: 10px;
+    width: 10px;
+    border-radius: 7px;
+    background: #fffffd;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: 1.1px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track{
+    background: #0C0E1C;
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 12.8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    background: #0C0E1C;
+    border-radius: 25px;
+    border: 0px #fffffd solid;
+  }
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    border: 1px #fc4d90 solid;
+    height: 10px;
+    width: 10px;
+    border-radius: 7px;
+    background: #fffffd;
+    cursor: pointer;
+  }
+
+  input[type=range]::-moz-range-progress{
+    background: linear-gradient(to right, #ff9f96 , #fc4d90);
+    height: 12.8px;
+    border-radius: 6px;
+  }
+
+/* Footer */
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+    grid-column: 2 / 12;
+    grid-row: 3 / 4;
+    margin: 45% 0 10%;
+}
+    
+.attribution a {
+    color:yellow;
+}
+
+/* Guide for colors */
+.colors
+{
+    color: hsl(243, 100%, 93%); /*Pale Blue*/
+    color: hsl(229, 7%, 55%); /*Grayish Blue*/
+    color: hsl(228, 56%, 26%); /*Dark Blue*/
+    color: hsl(229,57%,11%); /*Very Dark Blue*/
+}

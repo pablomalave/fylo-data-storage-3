@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Fylo data storage component</title>
+  <!-- Link to Typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Link to StyleSheets -->
+  <link rel="stylesheet" href="css/style.css">
+ 
+  
+</head>
+<body>
+
+  <div class="main">
+    <img src="images/logo.svg" alt="Fylo logo">
+    <div class="buttonDeck">
+      <button class="button"><img src="images/icon-document.svg" alt="Open Document"></button>
+      <button class="button"><img src="images/icon-folder.svg" alt="Open Folder"></button>
+      <button class="button"><img src="images/icon-upload.svg" alt="Upload Document"></button>
+    </div>
+  </div>
+
+  <div class="memoryContainer">
+    <p>
+      You’ve used <strong>815 GB</strong> of your storage
+    </p>
+    <input type="range" name="memoryRange" id="memoryIndicator">
+  
+    <div class="memoryLeft">
+      <strong>185</strong> GB LEFT
+    </div>
+    
+    <div class="memoryLimits">
+      <div>
+        0 GB
+      </div>
+      1000 GB
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Pablo Malavé</a>.
+  </div>
+</body>
+</html>
